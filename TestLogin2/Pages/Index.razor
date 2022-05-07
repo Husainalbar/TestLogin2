@@ -1,4 +1,7 @@
-﻿@page "/"
+﻿@inject IDialogService DialogService
+@inject IDialogService Dialog
+
+@page "/"
 
 <PageTitle>Index</PageTitle>
 
@@ -10,7 +13,7 @@
             <button type="submit" class="nav-link btn" style="color:white;background-color:#38EAA1">Sign Out</button>
         </form>
     </Authorized>
-    <NotAuthorized> 
+    <NotAuthorized>         
         <tr>
             <a href="Identity/Account/Register" style="text-decoration:none;padding: 14px 25px;background-color:#38EAA1;color:white;margin:10px">Sign Up</a>              
         </tr>
