@@ -7,12 +7,12 @@
         <h6>Hello, @context.User.Identity?.Name!</h6>
         <p>Welcome to your new app.</p>
         <form method="post" action="Identity/Account/LogOut">
-            <button type="submit" class="nav-link btn" style="color:white;background-color:#38EAA1">Logout</button>
+            <button type="submit" class="nav-link btn" style="color:white;background-color:#38EAA1">Sign Out</button>
         </form>
     </Authorized>
     <NotAuthorized>
-        <a href="Identity/Account/Register">Register</a>
-        <a href="Identity/Account/Login">Log in</a>
+        <a href="Identity/Account/Register">Sign Up</a>
+        <a href="Identity/Account/Login">Sign In</a>
     </NotAuthorized>
 </AuthorizeView>
 
